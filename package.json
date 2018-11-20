@@ -1,7 +1,13 @@
 {
+  "name": "autotest-runner",
+  "version": "0.0.1",
+  "main": "./App/main.js",
   "devDependencies": {
     "electron": "^3.0.10",
     "jest": "^23.6.0",
     "spectron": "^5.0.0"
+  },
+  "scripts": {
+    "start": "electron ."
   }
 }
