@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "jest": "^23.6.0",
+    "spectron": "^5.0.0"
+  }
+}
