@@ -8,29 +8,29 @@ app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
       app.quit();
     }
-  });
+});
   
-  app.on('ready', async () => {
-
+app.on('ready', async () => {
     window = new BrowserWindow({
-      show: false,
-      width: 1024,
-      height: 728
+        show: false,
+        width: 1024,
+        height: 728
     });
   
     window.loadURL('http://ya.ru');
    
     window.webContents.on('did-finish-load', () => {
-      if (!window) {
-        throw new Error('"window" is not defined');
-      }
-      // if (process.env.START_MINIMIZED) {
-      //     toolsWindow.minimize();
-      // } else {
-      window.show();
-      window.focus();
+        if (!window) {
+            throw new Error('"window" is not defined');
+        }
+        // if (process.env.START_MINIMIZED) {
+        //     toolsWindow.minimize();
+        // } else {
+        window.show();
+        window.focus();
     });
-window.on('closed'), () => {
-    window = null;
-}
+
+    window.on('closed', () => {
+        window = null;
+    });
 });
