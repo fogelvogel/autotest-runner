@@ -17,7 +17,7 @@ app.on('ready', async () => {
         height: 728
     });
   
-    window.loadURL('http://ya.ru');
+    window.loadURL('https://www.ya.ru/');
    
     window.webContents.on('did-finish-load', () => {
         if (!window) {

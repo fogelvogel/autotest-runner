@@ -1,6 +1,5 @@
 {
   "name": "autotest-runner",
-  "version": "0.0.1",
   "description": "A small application for launching autotests",
   "main": "./App/main.js",
   "devDependencies": {
