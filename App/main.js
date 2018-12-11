@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 
+// const path = require('path');
+
 let window = null;
 
 app.on('window-all-closed', () => {
@@ -17,7 +19,8 @@ app.on('ready', async () => {
         height: 728
     });
   
-    window.loadURL('https://www.ya.ru/');
+    // window.loadURL('https://www.ya.ru/');
+    window.loadURL(`file://${__dirname}/demo.html`);
    
     window.webContents.on('did-finish-load', () => {
         if (!window) {

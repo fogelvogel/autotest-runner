@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <script>
+    function clickFuncBtn1() {
+      document.getElementById("btn1").style.color = "red";
+    }
+    function clickFuncBtn2() {
+      document.getElementById("btn2").style.color = "red";
+    }
+    function clickFuncBtn3() {
+      document.getElementById("btn3").style.color = "red";
+    }
+    function clickFuncItem1() {
+      document.getElementById("item1").style.color = "red";
+    }
+    function clickFuncItem2() {
+      document.getElementById("item2").style.color = "red";
+    }
+    function clickFuncItem3() {
+      document.getElementById("item3").style.color = "red";
+    }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>On this page you can test program's features</h1>
+        <div class="menu">
+          <button class="menu-button" id="btn1" onclick="clickFuncBtn1()">button 1</button>
+          <button class="menu-button" id="btn2" onclick="clickFuncBtn2()">button 2</button>
+          <button class="menu-button" id="btn3" onclick="clickFuncBtn3()">button 3</button>
+        </div>
+      </header>
+      <div class="main-content">
+        <aside>
+          <h2>This is side menu</h2>
+          <p>
+            If you resize the window, this panel will be hidden
+          </p>
+          <ul>
+            <li id="item1" onclick="clickFuncItem1()">list Item 1</li>
+            <li id= "item2" onclick="clickFuncItem2()">list Item 2</li>
+            <li id="item3" onclick="clickFuncItem3()">list Item 3</li>
+          </ul>
+        </aside>
+        <section>
+          <input type="text" placeholder="type something">
+        </section>
+      </div>
+      <footer>
+        <h3>This is footer</h3>
+      </footer>
+    </div>
+  </body>
+</html>

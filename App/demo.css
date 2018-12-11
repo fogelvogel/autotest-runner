@@ -1,0 +1,75 @@
+html, body {
+   height: 100%;
+   background-color: cornsilk;
+}
+.wrapper {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.wrapper>div {
+   height: 100%;
+}
+
+header {
+   background-color: salmon;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   text-align: center;
+}
+.menu {
+   background-color: cornsilk;
+   margin-top: 10px;
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+}
+.menu-button {
+   width: 120px;
+   border-style: hidden;
+   background-color: coral;
+   color: cornsilk;
+   opacity: 0.8;
+}
+.menu-button:hover {
+   opacity: 1
+}
+.main-content {
+   display: flex;
+   justify-content: left;
+}
+aside {
+   display: inline-block;
+   padding-left: 10px;
+   padding-right: 20px;
+   max-width: 300px;
+   word-wrap: break-word;
+   color: cornsilk;
+   background-color: salmon;
+   display: inline-block; 
+}
+section {
+   display: inline-block;
+   padding: 20px;
+}
+footer {
+   background-color: coral;
+   color: dimgray;
+   padding: 10px;
+}
+input {
+   color: dimgray;
+}
+h1 {
+   color: cornsilk;
+}
+p {
+   color: dimgray;
+}
+@media (max-width: 500px) {
+   aside {
+      display: none;
+   }
+}
