@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="formOP3.css">
+    </head>
+    <body>
+        <h3>Требование в кладовую №</h3>
+        <input type="text" placeholder="номер документа">
+        дата
+        <input type="text" placeholder="дата составления">
+        Через кого (Фамилия, Имя, Отчество)
+        <input list="surnames">
+        <datalist id="surnames">
+                <option value="Попеску Эмилиэн Петрика"></option>
+                <option value="Зимний Яков Иванович"></option>
+                <option value="Штейн Карл"></option>
+            </datalist>
+        Организация
+        <input list="companies">
+        <datalist id="companies">
+            <option value="ООО 'Шаляй-Валяй'"></option>
+            <option value="Трест 'Рога и копыта'"></option>
+            <option value="ООО 'Шаг вперед'"></option>
+        </datalist>
+        по ОКПО
+        <input type="text">
+        Структурное подразделение
+        <input list="parts">
+        <datalist id="parts">
+                <option value="Бухгалтерия"></option>
+                <option value="Служба безопасности"></option>
+                <option value="Отдел сбыта"></option>
+        </datalist>
+        по ОКДП
+        <input type="text">
+        Структурное подразделение "получатель"
+        <input list="companies">
+        вид операции
+        <input type="text">
+       <table>
+           <tr id="header">
+               <td>номер</td>
+               <td>наименование продукта</td>
+               <td>код продукта</td>
+               <td>наименование ед. изм.</td>
+               <td>код ед. изм. по ОКЕИ</td>
+               <td>количество</td>
+               <td>примечание</td>
+            </tr>
+           <tr id="add-row"><td><input type="button" id="add-button" value="добавить продукт"></td></tr>
+       </table>
+    </body>
+</html>
