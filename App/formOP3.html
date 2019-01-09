@@ -12,6 +12,7 @@
             дата
             <input type="text" placeholder="дата составления">
         </div>
+		Серым отмечены поля, не обязательные для заполнения
         <div id="cherez-kogo">
             Через кого
             <input list="surnames" placeholder="Ф.И.О.">
@@ -47,7 +48,7 @@
                     Структурное подразделение
                 </td>
                 <td>
-                    <input list="parts" id="parts-input">
+                    <input list="parts" id="parts-input" class="no-need">
                     <datalist id="parts">
                         <option value="Бухгалтерия"></option>
                         <option value="Служба безопасности"></option>
@@ -58,7 +59,7 @@
                     по ОКДП
                 </td>
                 <td id="okdp">
-                    <input type="text">
+                    <input type="text"  class="no-need">
                 </td>
             </tr>
             <tr>
@@ -66,13 +67,13 @@
                     Структурное подразделение "получатель"
                 </td>
                 <td>
-                    <input list="companies">
+                    <input list="parts"  class="no-need">
                 </td>
                 <td>
                     вид операции
                 </td>
                 <td>
-                    <input type="text">
+                    <input type="text"  class="no-need">
                 </td>
             </tr>
         </table>

@@ -1,4 +1,4 @@
-
+﻿
 let organisation = document.getElementById("comp-input");
 let part = document.getElementById("parts-input");
 let position = document.getElementById("position-input");
@@ -36,6 +36,7 @@ part.addEventListener("change", () => {
 
     let OKDPInput = document.createElement("input");
     OKDPInput.setAttribute("type", "text");
+    OKDPInput.setAttribute("class", "no-need");
     switch(part.value) {
         case "Бухгалтерия": {
             OKDPInput.setAttribute("value", "A1");

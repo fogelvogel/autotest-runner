@@ -11,3 +11,15 @@ h3 {
 body {
     padding: 20px;
 }
+.no-need {
+	background-color: lightGray;
+}
+#cherez-kogo {
+	margin-top: 20px;
+}
+#otpusk-razreshil {
+	margin-top: 20px;
+}
+#table-to-insert {
+	background-color: pink;
+}
