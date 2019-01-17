@@ -9,6 +9,7 @@ h3 {
     display: inline-block;
 }
 body {
+    width: 100%;
     padding: 20px;
 }
 .no-need {
@@ -22,4 +23,19 @@ body {
 }
 #table-to-insert {
 	background-color: pink;
+}
+.code-of-product {
+    width: 100px;
+}
+.name-of-unit {
+    width: 150px;
+}
+.code-of-unit {
+    width: 100px;
+}
+.quantity {
+    width: 100px;
+}
+#pos-father {
+    display: inline-block;
 }

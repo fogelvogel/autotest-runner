@@ -10,7 +10,7 @@
             <h3>Требование в кладовую №</h3>
             <input type="text" placeholder="номер документа">
             дата
-            <input type="text" placeholder="дата составления">
+            <input type="date" placeholder="дата составления">
         </div>
 		Серым отмечены поля, не обязательные для заполнения
         <div id="cherez-kogo">
@@ -77,6 +77,32 @@
                 </td>
             </tr>
         </table>
+        <datalist id="goods">
+            <option value="Яблоко"></option>
+            <option value="Кашка"></option>
+            <option value="Жасминовый фреш"></option>
+            <option value="Семга"></option>
+            <option value="Сыр"></option>
+            <option value="Таракан"></option>
+        </datalist>
+        <datalist id="codes">
+            <option value="4532"></option>
+            <option value="1458"></option>
+            <option value="9568"></option>
+            <option value="4728"></option>
+            <option value="4235"></option>
+            <option value="7852"></option>
+        </datalist>
+        <datalist id="units">
+            <option value="штука"></option>
+            <option value="коробка"></option>
+            <option value="ящик"></option>
+        </datalist>
+        <datalist id="unit-codes">
+            <option value="214"></option>
+            <option value="754"></option>
+            <option value="213"></option>
+        </datalist>
         <table class="w3-table" id="table-to-insert">
             <tr id="header">
                <td>номер</td>
@@ -102,9 +128,12 @@
         </datalist>
        <div id="otpusk-razreshil">
        Отпуск разрешил
-       <input type="text" placeholder="Должность" list="positions" id="position-input">
+       <div id="pos-father">
+            <input type="text" placeholder="Должность" list="positions" id="position-input">
+       </div>
+      
        <div id="fio-father">
-            <input type="text" placeholder="Ф.И.О." id="fio-input">
+            <input type="text" placeholder="Ф.И.О." id="fio-input" list="surnames">
        </div>
       
        <script src="formOP3.js"></script>
